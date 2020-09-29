@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Required</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" /><br />
+      </fieldset>
+      <label for="mail">I want to receive email communications</label>
+      <input type="checkbox" name="mail" id="mail" checked /><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br />
+      <label for="state">State:</label>
+      <select name="state" id="state">
+        <optgroup label="real states">
+          <option value="tx">Texas</option>
+          <option value="ca">California</option>
+        </optgroup>
+        <option value="other">Other</option></select
+      ><br />
+      <label for="som">state of mind</label>
+      <input list="sm" name="som" id="som" />
+      <datalist id="sm">
+        <option value="Sad"></option>
+        <option value="Happy"></option>
+        <option value="Curious"></option>
+        <option value="Pensive"></option>
+        <option value="Excited"></option></datalist
+      ><br />
+      <button type="submit">Submit</button>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
